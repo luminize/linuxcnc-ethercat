@@ -19,6 +19,7 @@
 #define _LCEC_CLASS_ENC_H_
 
 #include "lcec.h"
+#include <stdbool.h>
 
 typedef struct {
   hal_s32_t raw_home;
