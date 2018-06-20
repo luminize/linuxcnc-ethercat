@@ -19,5 +19,5 @@ lcec_conf: $(LCEC_CONF_OBJS)
 	$(CC) -o $@ $(LCEC_CONF_OBJS) -Wl,-rpath,$(LIBDIR) -L$(LIBDIR) -llinuxcnchal -lexpat
 
 %.o: %.c
-	$(CC) -o $@ $(EXTRA_CFLAGS) -URTAPI -U__MODULE__ -DULAPI -Os -c $<
+	$(CC) -o $@ $(EXTRA_CFLAGS) -URTAPI -U__MODULE__ -DULAPI -Os -c -I/home/bdb/projects/etherlabmaster/include $<
 
